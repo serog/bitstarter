@@ -3,16 +3,86 @@
   <head>
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <link type="text/css" rel="stylesheet" 
           href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
+ <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
       }
+
+      /* Custom container */
       .container {
-        width: 960px;
+        margin: 0 auto;
+        max-width: 1000px;
       }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 100px;
+        line-height: 1;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+   
+  
       p.lead {
         padding-top: 15px;
       }
@@ -34,52 +104,101 @@
         line-height: 40px;
       }
       div.row {
-        border: 1px solid;
+        border: 0px none;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="row navigation">
+ <div class="masthead">
         <div class="span2 logo">
           Logo
         </div>
-        <div class="span6 blank">
-          Blank
-        </div>
-        <div class="span4 about">
-          About
-        </div>
+        <h3 class="muted">Project name</h3>
+
+   <div class="navbar"><div class="navbar-inner">
+    
+      <div class="row  nav">
+             <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
       </div>
-      <div class="row heading">
-        <div class="span12">
-          <h1>Bitstarter Title</h1>
-        </div>
-      </div> 
+</div></div>
+
+
+       
+      </div>
+     
      <div class="row subheading">
-        <div class="span12">
-          <p class="lead">This is my first bitstarter project.</p>
+        <div class="span12 jumbotron">
+          <h1>A bitstarter project!</h1>
+ <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <a class="btn btn-large btn-success" href="#">Get started today</a>
         </div>
       </div>
-      <div class="row pitch">
-        <div class="span6 video">
-          Video
+      <div class="row row-fluid pitch">
+        <div class="span5 offset1 video">
+		<img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
-        <div class="span6">
-          <div class="thermometer">
-            Thermometer
-          </div>
-          <div class="order">
-            Order
-          </div>
+
+	<div class="span4 actions">
+	 <div class="span8 offset2 actions">
+	  <div class="statistics">
+            <div class="span5">
+		<div class="linediv-l"><h3>1000</h3> <p>backers</p>
+                </div>
+	    </div>
+            <div class="span5">
+		<div class="linediv-c"><h3>$6000</h3> <p>of $10,000</1p>
+                </div>
+	    </div>
+            <div class="span5">
+		<div class="linediv-r"><h3>10</h3> <p>days left</1p>
+                </div>
+	    </div>
+          <div class="span12 offset1">
+            <div class="thermometer progress progress-striped ">
+            Funding
+		<div class="bar bar-success" style="width: 60%"></div>
+                <div class="bar bar-warning" style="width: 40%"></div>
+            </div>
+	  </div>
+
+          
           <div class="social">
             Social
           </div>
+      
+      </div><!-- statistics -->
+      </div>
+     </div>
+     </div>
+
+      <div class="row section1">
+        <div class="span12"><p></p>
+          <!-- Example row of columns -->
+      <div class="row-fluid">
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
       </div>
-      <div class="row section1">
-        <div class="span12">
-          Marketing Section 1
         </div>
       </div>
       <div class="row section2">
@@ -94,10 +213,28 @@
       </div>
       <div class="row footer">
         <div class="span12">
-          Footer
+           <p>&copy; Company 2013</p>
         </div>
       </div>
     </div>
+</div>
+ <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
   </body>
 </html>
 
